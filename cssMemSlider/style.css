@@ -127,3 +127,18 @@ label:active .btn {
 #radio-4:checked~.controls .captions-wrapper .captions {
     transform: translateX(-75%);
 }
+
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column-reverse;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
+    .buttons {
+        margin-bottom: 1rem;
+    }
+}
