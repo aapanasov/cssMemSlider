@@ -30,6 +30,7 @@ body {
 .slides-wrapper {
     width: 400%;
     display: flex;
+    transition: 0.6s;
 }
 
 .slide {
@@ -51,6 +52,7 @@ body {
 .captions {
     width: 400%;
     display: flex;
+    transition: 0.6s;
 }
 
 .caption {
@@ -79,5 +81,34 @@ label {
     border-radius: 50%;
     background-color: #61C0BF;
     cursor: pointer;
-    transition: 0.6s;
+    transition: 0.4s;
+}
+
+label:hover .btn {
+    background-color: aliceblue;
+}
+
+label:active .btn {
+    opacity: 0.6;
+}
+
+
+#radio-1:checked~.slides .slides-wrapper,
+#radio-1:checked~.controls .captions-wrapper .captions {
+    transform: translateX(0);
+}
+
+#radio-2:checked~.slides .slides-wrapper,
+#radio-2:checked~.controls .captions-wrapper .captions {
+    transform: translateX(-25%);
+}
+
+#radio-3:checked~.slides .slides-wrapper,
+#radio-3:checked~.controls .captions-wrapper .captions {
+    transform: translateX(-50%);
+}
+
+#radio-4:checked~.slides .slides-wrapper,
+#radio-4:checked~.controls .captions-wrapper .captions {
+    transform: translateX(-75%);
 }
