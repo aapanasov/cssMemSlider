@@ -92,6 +92,21 @@ label:active .btn {
     opacity: 0.6;
 }
 
+#radio-1:checked~.controls .buttons label:nth-child(1) .btn,
+#radio-2:checked~.controls .buttons label:nth-child(2) .btn,
+#radio-3:checked~.controls .buttons label:nth-child(3) .btn,
+#radio-4:checked~.controls .buttons label:nth-child(4) .btn {
+    border: 1px solid #61C0BF;
+    background-color: transparent;
+}
+
+#radio-1:checked~.controls .buttons label:nth-child(1):hover .btn,
+#radio-2:checked~.controls .buttons label:nth-child(2):hover .btn,
+#radio-3:checked~.controls .buttons label:nth-child(3):hover .btn,
+#radio-4:checked~.controls .buttons label:nth-child(4):hover .btn {
+    border: 1px solid aliceblue;
+}
+
 
 #radio-1:checked~.slides .slides-wrapper,
 #radio-1:checked~.controls .captions-wrapper .captions {
