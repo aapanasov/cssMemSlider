@@ -7,7 +7,7 @@
 body {
     background-color: #112D4E;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: aliceblue;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .buttons {
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: space-between;
 }
@@ -134,13 +134,13 @@ label:active .btn {
         flex-direction: column-reverse;
     }
 
-    .caption {
-        text-align: center;
+    .captions-wrapper {
+        width: 100%;
     }
 
     .buttons {
         justify-content: center;
-        gap: 8px;
+        gap: 12px;
         margin-bottom: 0.3rem;
     }
 }
