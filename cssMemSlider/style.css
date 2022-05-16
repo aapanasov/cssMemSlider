@@ -96,7 +96,7 @@ label:active .btn {
 #radio-2:checked~.controls .buttons label:nth-child(2) .btn,
 #radio-3:checked~.controls .buttons label:nth-child(3) .btn,
 #radio-4:checked~.controls .buttons label:nth-child(4) .btn {
-    border: 1px solid #61C0BF;
+    border: 0.15rem solid #61C0BF;
     background-color: transparent;
 }
 
@@ -104,7 +104,7 @@ label:active .btn {
 #radio-2:checked~.controls .buttons label:nth-child(2):hover .btn,
 #radio-3:checked~.controls .buttons label:nth-child(3):hover .btn,
 #radio-4:checked~.controls .buttons label:nth-child(4):hover .btn {
-    border: 1px solid aliceblue;
+    border: 0.15rem solid aliceblue;
 }
 
 
@@ -129,7 +129,7 @@ label:active .btn {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .controls {
         flex-direction: column-reverse;
     }
@@ -140,7 +140,7 @@ label:active .btn {
 
     .buttons {
         justify-content: center;
-        gap: 12px;
+        gap: 1rem;
         margin-bottom: 0.3rem;
     }
 }
